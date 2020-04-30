@@ -1,0 +1,21 @@
+environment_config:
+  path: environment_config.dart # optional, result file path against `lib/` folder
+  dotenv_path: .env # optional, result file path for .env file against project root folder
+  class: EnvironmentConfig # optional, class name
+  #  dev_extension: # optional, by default undefined, allows to specify command option to use extension
+
+  fields:
+    JAVA_HOME:
+      env_var: JAVA_HOME
+    API_ADDRESS:
+      default: http://test.abc.com/api/
+      config_field: true
+      dotenv: true
+    APP_ID:
+      default: '123456'
+    TEST_NUM:
+      type: int
+      short_name: o
+      default: "2"
+      config_field: true
+      dotenv: true
