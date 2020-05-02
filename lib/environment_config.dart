@@ -6,4 +6,6 @@ class EnvironmentConfig {
   static const String APP_ID = '123456';
 
   static const int TEST_NUM = 2;
+
+  static const bool TEST_BOOLEAN = false;
 }

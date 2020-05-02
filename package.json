@@ -1,0 +1,21 @@
+{
+  "name": "flutter_template",
+  "version": "1.0.0",
+  "description": "用来运行flutter 相关命令",
+  "main": "index.js",
+  "directories": {
+  },
+  "scripts": {
+    "flutter-dev": "flutter pub run environment_config:generate --config=env/dev_config.yaml"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fengwuxp/flutter_template.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fengwuxp/flutter_template/issues"
+  },
+  "homepage": "https://github.com/fengwuxp/flutter_template#readme"
+}

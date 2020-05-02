@@ -19,3 +19,8 @@ environment_config:
       default: "2"
       config_field: true
       dotenv: true
+    TEST_BOOLEAN:
+      type: bool
+      default: "false"
+      config_field: true
+      dotenv: true
