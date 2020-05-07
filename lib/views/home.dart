@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_template/views/goods_detail.dart';
 
-import 'router.dart';
-import 'globalSetting.dart';
 import 'home/index.dart';
-import 'api/definitions/User.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 
 const String HOME_VIEW_PATH_NAME = "home";
@@ -66,14 +64,15 @@ class _HomViewState extends State<HomeView> {
         title: Text('我的'),
       ),
     ]);
-    _list..add(new Home())..add(new Home())..add(new Home())..add(new Home());
+    _list
+      ..add(new Home())
+      ..add(new GoodsView())
+      ..add(new Home())
+      ..add(new Home());
   }
 
   @override
   Widget build(BuildContext context) {
-    User user = User.fromJsonString('{"name": "章三", "age": 10}');
-    print(user.toJsonString());
-
     return WillPopScope(
         onWillPop: _onWillPop,
         child: Scaffold(
@@ -84,7 +83,8 @@ class _HomViewState extends State<HomeView> {
           ),
           floatingActionButton: activeBottomNavigationBar == 0
               ? FloatingActionButton(
-                  child: Icon(Icons.vertical_align_top, color: Color.fromARGB(255, 102, 102, 102)),
+                  child: Icon(Icons.vertical_align_top,
+                      color: Color.fromARGB(255, 102, 102, 102)),
                   backgroundColor: Color.fromARGB(255, 255, 255, 255),
                 )
               : null,
@@ -105,7 +105,6 @@ class _HomViewState extends State<HomeView> {
   int _lastClickBackTimes = 0;
 
   Future<bool> _onWillPop() {
-    print('滚动');
     //计算两次时间间隔
     int now = DateTime.now().millisecondsSinceEpoch;
     if (now - _lastClickBackTimes > 2200) {

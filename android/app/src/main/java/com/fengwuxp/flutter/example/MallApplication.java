@@ -1,4 +1,4 @@
-package com.vma.ynd.mall;
+package com.fengwuxp.flutter.example;
 
 import android.app.Application;
 import android.util.Log;

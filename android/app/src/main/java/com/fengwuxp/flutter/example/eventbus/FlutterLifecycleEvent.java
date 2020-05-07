@@ -1,4 +1,4 @@
-//package com.vma.ynd.mall.eventbus;
+//package com.fengwuxp.flutter.example.eventbus;
 //
 //
 ///**

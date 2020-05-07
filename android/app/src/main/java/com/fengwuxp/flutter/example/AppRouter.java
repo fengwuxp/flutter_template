@@ -1,4 +1,4 @@
-package com.vma.ynd.mall;
+package com.fengwuxp.flutter.example;
 
 import android.app.Activity;
 import android.content.Context;

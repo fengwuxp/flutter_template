@@ -1,8 +1,9 @@
-package com.vma.ynd.mall;
+package com.fengwuxp.flutter.example;
 
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
+
 
 import java.util.HashMap;
 import java.util.Map;

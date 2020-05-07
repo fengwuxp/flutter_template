@@ -40,6 +40,8 @@ dependencies:
   fengwuxp_dart_basic:
     git: git://github.com/fengwuxp/fengwuxp_dart_basic.git
   environment_config: ^2.2.2
+  bot_toast: ^3.0.0
+  flutter_spinkit: ^4.1.2
 
 
 dev_dependencies:

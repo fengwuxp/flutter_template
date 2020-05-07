@@ -1,12 +1,11 @@
+import 'package:bot_toast/bot_toast.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_boost/flutter_boost.dart';
 
-const  GOODS__VIEW_PATH_NAME = "goods_detail";
+const GOODS__VIEW_PATH_NAME = "goods_detail";
 
 class GoodsView extends StatefulWidget {
-
-
 //  GoodsView(ARouteOption option) : super();
   @override
   State<StatefulWidget> createState() {
@@ -58,12 +57,13 @@ class _GoodsViewState extends State<GoodsView> {
           child: Text('商品详情'),
           onPressed: () {
             print("open first page again!");
-            FlutterBoost.singleton.open("flutter://nativePage", urlParams: <dynamic, dynamic>{
-              "query": {"aaa": "bbb"}
-            }).then((Map value) {
-              print("did recieve first route result");
-              print("did recieve first route result $value");
-            });
+//            FlutterBoost.singleton.open("flutter://nativePage", urlParams: <dynamic, dynamic>{
+//              "query": {"aaa": "bbb"}
+//            }).then((Map value) {
+//              print("did recieve first route result");
+//              print("did recieve first route result $value");
+//            });
+            BotToast.showLoading();
           },
         ),
       ),

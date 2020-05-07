@@ -4,12 +4,8 @@ import 'package:flutter_boost/flutter_boost.dart';
 import 'package:flutter_template/components/demo/demo_simple_component.dart';
 import 'package:flutter_template/views/goods_detail.dart';
 import 'package:flutter_template/views/home.dart';
-import 'package:flutter_template/views/home/independent_travel/independent_travel_detail.dart';
-import 'package:flutter_template/views/home/independent_travel/index.dart';
 import 'package:flutter_template/views/common/succuss_result.dart';
-import 'package:flutter_template/views/login/forget_password.dart';
-import 'package:flutter_template/views/login/login.dart';
-import 'package:flutter_template/views/login/register.dart';
+import 'package:flutter_template/views/spinkit/showcase.dart';
 
 import './route_handlers.dart';
 
@@ -26,26 +22,12 @@ void _defineRoutes() {
     print("ROUTE WAS NOT FOUND !!!");
   });
 
-  /// 登录
-  router.define(LOGIN_VIEW_PATH_NAME, handler: loginViewRouteHandler);
-
-  /// 注册
-  router.define(REGISTER_VIEW_PATH_NAME, handler: registerViewRouteHandler);
-
-  /// 忘记密码
-  router.define(FORGET_PASSWORD_VIEW_PATH_NAME, handler: forgetPasswordViewRouteHandler);
-
   router.define(DEMO_VIEW_PATH_NAME, handler: demoRouteHandler);
 
   router.define("/$GOODS__VIEW_PATH_NAME", handler: goodsViewRouteHandler);
 
-  router.define("/$INDEPENDENT_TRAVEL_VIEW_PATH_NAME", handler: independentTravelViewRouteHandler);
-
   router.define("/$SUCCESS_RESULT_VIEW_PATH_NAME", handler: successResultViewRouteHandler);
-
-  router.define("/$INDEPENT_TRAVEL_DETAIL_VIEW_PATH_NAME", handler: independentTravelDetailViewRouteHandler);
-
-
+  router.define("/$SHOW_CASE_VIEW_PATH_NAME", handler: spinkitShowCase);
 }
 
 // 注册需要被原生打开的页面

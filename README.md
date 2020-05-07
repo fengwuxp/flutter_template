@@ -36,8 +36,13 @@ samples, guidance on mobile development, and a full API reference.
 #### 权限检查
 - [flutter-permission-handler](https://github.com/Baseflow/flutter-permission-handler)
 
-#### profile 配置
+#### profile，环境变量配置
 - [dart_environment_config](https://github.com/TatsuUkraine/dart_environment_config)
+```
+ 生成命令：
+ flutter pub run environment_config:generate --config=env/dev_config.yaml
+```
+
 
 #### 检查更新插件
 - [r_upgrade](https://github.com/rhymelph/r_upgrade);
@@ -87,12 +92,10 @@ https://zhuanlan.zhihu.com/p/88936569
 - [flui](https://github.com/Rannie/flui)
 - [cool_ui](https://github.com/Im-Kevin/cool_ui)
 
-#### toast、dialog
+#### toast、spin、loading
 - [bot_toast](https://github.com/MMMzq/bot_toast)
 - [fluttertoast](https://github.com/PonnamKarthik/FlutterToast)
 - [giffy_dialog](https://github.com/xsahil03x/giffy_dialog);
-
-#### spin、loading
 - [flutter_spinkit](https://github.com/jogboms/flutter_spinkit)
 - [step-progress-indicator](https://github.com/SandroMaglione/step-progress-indicator)
 - [IntervalProgressBar](https://github.com/stefanJi/IntervalProgressBar)
@@ -104,9 +107,23 @@ https://zhuanlan.zhihu.com/p/88936569
 #### 开源组件
 - [flutter_boost](https://github.com/alibaba/flutter_boost)
 - [fluro 路由组件](https://github.com/theyakka/fluro)
-- [dart_environment_config](https://github.com/TatsuUkraine/dart_environment_config)
-```
- flutter pub run environment_config:generate --config=env/dev_config.yaml
-```
+- [fish-redux](https://github.com/alibaba/fish-redux)
 
+#### idea相关插件
+- [built-value-snippets](https://github.com/GiancarloCode/built-value-snippets)
+- [flutter-img-sync](https://github.com/Leo0618/flutter-img-sync)
+- [dart-data-plugin](https://github.com/andrasferenczi/dart-data-plugin)
 
+#### flutter相关资料：
+- [语言](https://www.dartcn.com/guides/language/language-tour)
+##### 社区开源案例：
+- [官方仓库](https://github.com/flutter/flutter)
+- [flutter混合项目基础框架，闲鱼开源](https://github.com/alibaba/flutter_boost)
+- [flutter 开发者帮助 APP，包含 flutter 常用 140+ 组件的demo 演示与中文文档](https://github.com/alibaba/flutter-go)
+- [一个完整的git 客户端程序](https://github.com/CarGuo/gsy_github_app_flutter)
+
+##### 中文社区：
+- [中文网](https://flutterchina.club/)
+- [flutter-掘金社区](https://juejin.im/tag/Flutter)
+#### 视频教程：
+- [bilibili flutter教程](https://space.bilibili.com/480410119)
