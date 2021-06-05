@@ -1,5 +1,5 @@
 class EnvironmentConfig {
-  static const String JAVA_HOME = 'C:\Program Files\Java\jdk1.8.0_221';
+  static const String JAVA_HOME = '';
 
   static const String API_ADDRESS = 'http://test.abc.com/api/';
 

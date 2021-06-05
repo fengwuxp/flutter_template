@@ -1,9 +1,6 @@
 /// 商品列表项模块
 
-
 import 'package:flutter/material.dart';
-
-import 'dart:math';
 
 class GoodsRowItem extends StatelessWidget {
   final data;

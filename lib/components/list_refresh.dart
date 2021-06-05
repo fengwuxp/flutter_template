@@ -4,7 +4,6 @@
 /// Time: 上午1:16
 /// email: zhu.yan@alibaba-inc.com
 /// target: ListRefresh 的示例
-
 import 'dart:async';
 
 import 'package:flutter/material.dart';

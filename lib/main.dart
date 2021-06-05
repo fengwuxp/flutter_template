@@ -1,9 +1,7 @@
-import 'package:fenguwxp_fluro/fluro.dart';
+import 'package:bot_toast/bot_toast.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_boost/flutter_boost.dart';
-import 'package:flutter_template/app_router.dart';
 import 'package:flutter_template/route/route_init.dart';
-import 'package:flutter_template/views/home.dart';
 
 void main() {
   runApp(MyApp());
@@ -18,21 +16,32 @@ class _MyAppState extends State<MyApp> {
   @override
   void initState() {
     super.initState();
-
     initRoutes();
   }
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      key: Key("App"),
-      title: 'flutter tempalte',
-      builder: FlutterBoost.init(postPush: _onRoutePushed),
-      onGenerateRoute: Router.appRouter.generator,
+    return FlutterBoostApp(
+      routeFactory,
+      appBuilder: appBuilder,
     );
   }
 
-  void _onRoutePushed(String pageName, String uniqueId, Map params, Route route, Future _) {
-    print("=====>  $pageName  $uniqueId $params");
+  Route<dynamic> routeFactory(RouteSettings settings, String uniqueId) {
+    FlutterBoostRouteFactory func = flutterBootsRoutes[settings.name];
+    if (func == null) {
+      return null;
+    }
+    return func(settings, uniqueId);
+  }
+
+  Widget appBuilder(Widget home) {
+    return MaterialApp(
+        home: home,
+        debugShowCheckedModeBanner: false,
+        //1. call BotToastInit
+        builder: BotToastInit(),
+        //2. registered route observer
+        navigatorObservers: [BotToastNavigatorObserver()]);
   }
 }

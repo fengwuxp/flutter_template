@@ -41,15 +41,10 @@ class DemoSimpleComponent extends StatelessWidget {
                 highlightColor: ColorHelpers.blackOrWhiteContrastColor(color).withAlpha(17),
                 splashColor: ColorHelpers.blackOrWhiteContrastColor(color).withAlpha(34),
                 onPressed: () {
-//                  if (result == null) {
-//                    Navigator.pop(context);
-//                  } else {
-//                    Navigator.pop(context, result);
-//                  }
-                  AppRouter.demo(context, "1", "2", "3");
+                  AppRouter.goodsDetail(context, "1", "2");
                 },
                 child: Text(
-                  "OK",
+                  "商品详情",
                   style: TextStyle(
                     fontSize: 18.0,
                     color: ColorHelpers.blackOrWhiteContrastColor(color),

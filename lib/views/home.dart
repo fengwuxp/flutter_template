@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_template/components/demo/demo_simple_component.dart';
 import 'package:flutter_template/views/goods_detail.dart';
-
-import 'home/index.dart';
+import 'package:flutter_template/views/home/index.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 
 const String HOME_VIEW_PATH_NAME = "home";
@@ -15,18 +15,17 @@ class _HomViewState extends State<HomeView> {
   int activeBottomNavigationBar = 0;
 
 //  GlobalKey<RouterState> _routerKey = GlobalKey();
-
+//    _routerKey.currentState.getNavigatorState().pushNamed(value.toString());
   // 页面tab items
   List<BottomNavigationBarItem> _tabs = [];
 
   // 页面
-  List<Widget> _list = List();
+  List<Widget> _list = [];
 
   void _changeActiveBottomNavigationBar(int value) {
     setState(() {
       activeBottomNavigationBar = value;
     });
-//    _routerKey.currentState.getNavigatorState().pushNamed(value.toString());
   }
 
   @override
@@ -64,10 +63,9 @@ class _HomViewState extends State<HomeView> {
         title: Text('我的'),
       ),
     ]);
-    _list
-      ..add(new Home())
+    _list..add(new Home())
       ..add(new GoodsView())
-      ..add(new Home())
+      ..add(new DemoSimpleComponent())
       ..add(new Home());
   }
 
@@ -83,8 +81,7 @@ class _HomViewState extends State<HomeView> {
           ),
           floatingActionButton: activeBottomNavigationBar == 0
               ? FloatingActionButton(
-                  child: Icon(Icons.vertical_align_top,
-                      color: Color.fromARGB(255, 102, 102, 102)),
+                  child: Icon(Icons.vertical_align_top, color: Color.fromARGB(255, 102, 102, 102)),
                   backgroundColor: Color.fromARGB(255, 255, 255, 255),
                 )
               : null,

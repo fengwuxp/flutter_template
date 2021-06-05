@@ -1,7 +1,6 @@
 
-import 'package:flutter/material.dart';
-import 'dart:math';
 
+import 'package:flutter/material.dart';
 import 'package:flutter_template/components/app_bar.dart';
 
 /// 自由行

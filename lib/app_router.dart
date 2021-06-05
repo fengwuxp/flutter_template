@@ -2,8 +2,8 @@ import 'dart:async';
 
 import 'package:fengwuxp_dart_declarative_api/index.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:flutter_template/views/goods_detail.dart';
 import 'package:flutter_template/views/common/succuss_result.dart';
+import 'package:flutter_template/views/goods_detail.dart';
 import 'package:flutter_template/views/spinkit/showcase.dart';
 
 /// 路由分为4种情况
