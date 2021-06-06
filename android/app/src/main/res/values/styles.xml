@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-<!--    <style name="LaunchTheme" parent="@android:style/Theme.Black.NoTitleBar">-->
-<!--        &lt;!&ndash; Show a splash screen on the activity. Automatically removed when-->
-<!--             Flutter draws its first frame &ndash;&gt;-->
-<!--        <item name="android:windowBackground">@drawable/launch_background</item>-->
-<!--    </style>-->
+    <!--    <style name="LaunchTheme" parent="@android:style/Theme.Black.NoTitleBar">-->
+    <!--        &lt;!&ndash; Show a splash screen on the activity. Automatically removed when-->
+    <!--             Flutter draws its first frame &ndash;&gt;-->
+    <!--        <item name="android:windowBackground">@drawable/launch_background</item>-->
+    <!--    </style>-->
     <!-- Base application theme. -->
     <style name="AppTheme" parent="@android:style/Theme.Black.NoTitleBar">
-<!--        <item name="colorPrimary">@color/status_bar_color</item>-->
-<!--        <item name="colorPrimaryDark">@color/status_bar_color</item>-->
+        <!--        <item name="colorPrimary">@color/status_bar_color</item>-->
+        <!--        <item name="colorPrimaryDark">@color/status_bar_color</item>-->
         <item name="android:windowBackground">@color/app_window_background_color</item>
         <item name="android:windowIsTranslucent">true</item>
-<!--        <item name="android:windowAnimationStyle">@style/NoneAnimation</item>-->
+        <!--        <item name="android:windowAnimationStyle">@style/NoneAnimation</item>-->
     </style>
     <!-- 应用启动页(StartingWindow)的theme -->
     <style name="AppTheme.StartingWindowTheme" parent="AppTheme">
@@ -22,7 +22,7 @@
         <!--        <item name="android:windowIsTranslucent">true</item>-->
         <!-- 可以设置成纯颜色（设置一个和Activity UI相似的背景） -->
         <!--也可以设置成一张图片 -->
-        <item name="android:windowBackground">@drawable/launch_screen</item>
+        <item name="android:windowBackground">@drawable/launch_background</item>
     </style>
 
 </resources>

@@ -1,22 +1,22 @@
 package com.fengwuxp.flutter.example;
 
 import android.os.Bundle;
-import android.os.PersistableBundle;
-import android.view.View;
+import android.util.Log;
 import androidx.annotation.Nullable;
-import io.flutter.embedding.android.FlutterActivity;
+import com.idlefish.flutterboost.containers.FlutterBoostActivity;
 
 
 /**
  * @author wuxp
  */
-public class MainActivity extends FlutterActivity {
+public class MainActivity extends FlutterBoostActivity {
 
-    private static final String TAG = "MainActivity";
+    private static final String TAG = MainActivity.class.getSimpleName();
 
     @Override
-    public void onCreate(@Nullable Bundle savedInstanceState, @Nullable PersistableBundle persistentState) {
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Log.i(TAG, "flutter boost onCreate");
     }
 
 }

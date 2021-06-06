@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">fengwuxp_flutter</string>
+    <string name="app_name">flutter_template</string>
     <string name="open_native">open native page</string>
     <string name="open_flutter">open flutter page</string>
     <string name="open_flutter_fragment">open flutter fragment page</string>
