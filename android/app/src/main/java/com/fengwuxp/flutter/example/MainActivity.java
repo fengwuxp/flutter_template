@@ -2,6 +2,7 @@ package com.fengwuxp.flutter.example;
 
 import android.os.Bundle;
 import android.os.PersistableBundle;
+import android.view.View;
 import androidx.annotation.Nullable;
 import io.flutter.embedding.android.FlutterActivity;
 
@@ -17,4 +18,5 @@ public class MainActivity extends FlutterActivity {
     public void onCreate(@Nullable Bundle savedInstanceState, @Nullable PersistableBundle persistentState) {
         super.onCreate(savedInstanceState);
     }
+
 }
