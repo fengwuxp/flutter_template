@@ -34,16 +34,5 @@ public class NativePageActivity extends AppCompatActivity implements View.OnClic
 
     @Override
     public void onClick(View v) {
-        Map params = new HashMap();
-        params.put("test1", "v_test1");
-        params.put("test2", "v_test2");
-
-        if (v == mOpenNative) {
-            AppRouter.openPageByUrl(this, AppRouter.NATIVE_PAGE_URL, params);
-        } else if (v == mOpenFlutter) {
-            AppRouter.openPageByUrl(this, AppRouter.FLUTTER_GOODS_DETAIL, params);
-        } else if (v == mOpenFlutterFragment) {
-            AppRouter.openPageByUrl(this, AppRouter.FLUTTER_FRAGMENT_PAGE_URL, params);
-        }
     }
 }
